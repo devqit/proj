@@ -1,0 +1,39 @@
+﻿/*Container Code*/
+
+#container {
+	background-color: #DDD9F2;
+}
+
+/*Masthead Code*/
+
+#masthead {
+	background-color: #235FDB;
+	position: relative;
+}
+
+#heading {
+	display: block;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#heading h1{
+	text-align: center;
+	color: white;
+	font: "Helvetica";
+	display: inline;
+}
+
+#masthead img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100px;
+}
+
+/*Navbar Code*/
+
+#navigation{
+	display: inline-block;
+}

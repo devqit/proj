@@ -1,40 +1,62 @@
 <!DOCTYPE html>
-<html>
-<!-- SAFA SITE -->
-<meta name="viewport" content="width=device-width">
-<link rel="stylesheet" type="text/css" href="CSS/style.css">
-<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
+<html lang="en">
 <head>
-<title> SAFAUS </title>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="CSS/style.css">
 </head>
 <body>
-<!-- Header -->
-<div id="feed-container">
-<div id="feed">
-Log in / Sign up!
-</div>
-</div>
-<div id="header">
-	<img src="images/header logo.png" width="90%" height="90%" usemap="#head">
-	<map name="head">
-		<area shape="circle" coords="106,104,82,126" href="index.html" alt="logo">
-		<area shape="rect" coords="952,8,1047,57" href="" alt="English">
-		<area shape="rect" coords="1065,8,1160,57" href="" alt="China">
-	</map>
+<div class="container-fluid header">
+  <img src="images/Logo.png" width="50%" id="mobile_header">
+  <img src="images/Header Logo.png" width="50%" id="web_header">
 </div>
 
-<!-- NavBar -->
-<div id="nav">
-	<ul id="menu">
-		<li><a href="index.html" class="sub">Home</a></li>
-		<li><a href="" class="sub">Events and News</a></li>
-		<li><a href="" class="sub">Committees</a></li>
-		<li><a href="" class="sub">About SAFA</a></li>
-		<li><a href="" class="sub">Contact Us</a></li>
+  <nav class="navbar navbar-inverse" id="safa_nav">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Home</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active" id="safa_active" ><a href="#" >Events and News</a></li>
+          <li class="dropdown">
+            <a class="safa_color"  href="#" >Committees </span></a>
 
-		<li><a href="" class="sub">Chinese Version</a></li>
-	</ul>
-</div>
+          </li>
+          <li><a href="#" class="safa_color" >About SAFA</a></li>
+          <li><a href="#" class="safa_color" >Contact Us</a></li>
+          <li><a href="#"data-toggle="dropdown"  class="dropdown-toggle safa_color" >Language <span class="caret"></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Chinese</a></li>
+            <li><a href="#">English</a></li>
+            </ul>
+          </li>
+
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="under_nav">
+&nbsp;
+    <!--red line -->
+  </div>
+
+
 
 </body>
 </html>
